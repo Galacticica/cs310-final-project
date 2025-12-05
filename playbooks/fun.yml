@@ -10,3 +10,7 @@
       package: name=cowsay state=present
     - name: Install lolcat
       package: name=lolcat state=present
+    - name: Install Nyan Cat
+      package: name=nyancat state=present
+    - name: Install Ninvaders
+      package: name=ninvaders state=present
