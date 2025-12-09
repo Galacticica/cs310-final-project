@@ -18,7 +18,3 @@
         output_logs: true
         exposed_ports:
           - 8083
-
-    - name: Show output
-      ansible.builtin.debug:
-        msg: "{{ output.container.Output }}"
