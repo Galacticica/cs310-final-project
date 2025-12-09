@@ -12,12 +12,12 @@
 
     - name: Start container
       community.docker.docker_container:
-        cleanup: true
-        command: bagisto --version
-        detach: false
+        detach: true
         image: webkul/bagisto:2.3.6
         name: bagisto-container
         output_logs: true
+        exposed_ports:
+          - "8083:80"
 
     - name: Show output
       ansible.builtin.debug:
