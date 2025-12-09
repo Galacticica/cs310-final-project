@@ -17,7 +17,7 @@
         name: bagisto-container
         output_logs: true
         exposed_ports:
-          - "8083:80"
+          - 8083
 
     - name: Show output
       ansible.builtin.debug:
