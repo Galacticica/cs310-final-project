@@ -1,0 +1,20 @@
+---
+- name: Grafana Application Deployment
+  hosts: localhost
+  gather_facts: false
+  vars:
+    ansible_python_interpreter: /usr/bin/python3
+  tasks:
+    - name: Pull image
+      community.docker.docker_image_pull:
+        name: grafana/grafana
+        tag: latest
+
+    - name: Start container
+      community.docker.docker_container:
+        detach: true
+        image: grafana/grafana:latest
+        name: grafana-container
+        output_logs: true
+        exposed_ports:
+          - 8034
