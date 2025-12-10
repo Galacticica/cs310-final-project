@@ -18,6 +18,9 @@
       comment: Hermoine Granger
       uid: 1040
       group: developer
+      generate_ssh_key: yes
+      ssh_key_bits: 2048
+      ssh_key_file: .ssh/id_rsa
 
   - name: Add the user 'Katniss' with a specific uid and a primary group of 'developer'
     ansible.builtin.user:
@@ -25,6 +28,9 @@
       comment: Katniss Everdeen
       uid: 1041
       group: developer
+      generate_ssh_key: yes
+      ssh_key_bits: 2048
+      ssh_key_file: .ssh/id_rsa
 
   - name: Add the user 'ian' with a specific uid and a primary group of 'admin'
     ansible.builtin.user:
