@@ -10,3 +10,25 @@
     ansible.builtin.group:
       name: admin
       state: present
+
+  
+- name: Add the user 'reagan' with a specific uid and a primary group of 'developer'
+  ansible.builtin.user:
+    name: reagan
+    comment: Reagan Zierke
+    uid: 1040
+    group: developer
+
+- name: Add the user 'heidi' with a specific uid and a primary group of 'developer'
+  ansible.builtin.user:
+    name: heidi
+    comment: Heidi Blank
+    uid: 1041
+    group: developer
+
+- name: Add the user 'ian' with a specific uid and a primary group of 'admin'
+  ansible.builtin.user:
+    name: ian
+    comment: Ian Kollipara
+    uid: 1042
+    group: admin
