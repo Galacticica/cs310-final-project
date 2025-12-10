@@ -1,5 +1,5 @@
 - name: Create users and groups
-  hosts: all
+  hosts: localhost
   become: yes
   tasks:
   - name: Create developer group
