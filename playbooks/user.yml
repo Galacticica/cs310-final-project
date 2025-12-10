@@ -12,17 +12,17 @@
       state: present
 
   
-  - name: Add the user 'reagan' with a specific uid and a primary group of 'developer'
+  - name: Add the user 'hermoine' with a specific uid and a primary group of 'developer'
     ansible.builtin.user:
-      name: reagan
-      comment: Reagan Zierke
+      name: hermoine
+      comment: Hermoine Granger
       uid: 1040
       group: developer
 
-  - name: Add the user 'heidi' with a specific uid and a primary group of 'developer'
+  - name: Add the user 'Katniss' with a specific uid and a primary group of 'developer'
     ansible.builtin.user:
-      name: heidi
-      comment: Heidi Blank
+      name: katniss
+      comment: Katniss Everdeen
       uid: 1041
       group: developer
 
