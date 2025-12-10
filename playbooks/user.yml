@@ -1,0 +1,9 @@
+- name: Create developer group
+  ansible.builtin.group:
+    name: developer
+    state: present
+
+- name: Create admin group
+  ansible.builtin.group:
+    name: admin
+    state: present
