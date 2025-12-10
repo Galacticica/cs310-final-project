@@ -12,12 +12,12 @@
       state: present
 
   - name: Allow admin group to have passwordless sudo
-      ansible.builtin.copy:
-        dest: /etc/sudoers.d/admin
-        content: "%admin ALL=(ALL) ALL\n"
-        owner: root
-        group: root
-        mode: '0440'
+    ansible.builtin.copy:
+      dest: /etc/sudoers.d/admin
+      content: "%admin ALL=(ALL) NOPASSWD: ALL\n"
+      owner: root
+      group: root
+      mode: '0440'
 
   - name: Add the user 'hermoine' with a specific uid and a primary group of 'developer'
     ansible.builtin.user:
