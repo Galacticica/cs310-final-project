@@ -1,0 +1,50 @@
+CS310 Final Project
+By Heidi Blank
+
+
+1. What was the purpose of this project in your own words?
+
+- The purpose of this project is to create declarative configurations for a variety 
+of tasks completed by a System Administrator such as deploying an application (Bagisto and Grafana)
+ and adding users with different permissions.
+
+
+
+2. Describe each task. What did that task accomplish, how did you accomplish it. Use complete sentences.
+
+- First, we deployed both Bagisto and Grafana using Docker. In order to accomplish this, we searched on 
+Ansible’s documentation for how to pull an application image and start the container. Based off the documentation
+ example, we substituted the proper naming based off of Bagisto and Grafana’s docs and slightly edited other 
+ parts of each task. The two tasks required were for docker to pull the image, and then the second task was to
+  start the container with said image. Both Grafana and Bagisto followed this same pattern. 
+- For our User playbook, we had tasks for creating a developer group, creating an admin group, giving the admin
+ group sudo privileges, and then three tasks to add three separate users to the different groups. In order to 
+ accomplish this, we mainly looked at Ansible’s documentation and searched for examples of how to implement 
+ different users, groups, and privileges.
+
+
+
+3. Explain 3 hurdles/misconceptions you encountered whilst working on the project. How did you overcome these hurdles?
+
+- The biggest hurdle we had was deploying Bagisto on our server instead of using declarative configurations. We overcame
+ this by asking for help and looking at Ansible’s documentation for Docker, so we could implement it that way instead. 
+- Another hurdle we had was working with GitHub because of our different systems and making sure we didn’t mess up each
+ other’s work. The way we overcame this was a lot of consistent communication.
+- Lastly, we struggled with finding documentation with giving the sudo group root access, so Reagan research on AI sources
+ for how to implement this access.
+
+
+
+4. Explain 2 things you would do differently if you had to re-do this project?
+
+- First, I would have planned ahead better with searching through all the documentation beforehand so that the tasks were
+ easier to understand and implement. I also would have liked to find in Ansible’s documentation where it describes how to
+  give root access to the sudo group.
+
+
+
+5. (Extra Credit +2 Pts) What is something that could be improved in this project? This could be related to tasks, grouping,
+ the servers, etc. If all you add is that it should've worked the first time that's not enough.
+ 
+- Something that could be improved in this project is more explanation on how Ansibile works. Something else that could be
+ interesting is if we had had the time to actually start the configurations and setup more as if it were a real company.
