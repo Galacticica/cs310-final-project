@@ -1,11 +1,12 @@
-hi
 # CS 310: Final Project
 
 ## Summary
-- What this project does
+This project creates a simple declarative configuration for the company CraftRoast. It creates 2 developer accounts, as well as an admin account. It also creates an e-commerce site and a grafana instance to monitor it.
 
 ## Usage
-- How to run the project
+To run this project:
+1. Run ```git clone https://github.com/Galacticica/cs310-final-project```
+2. 
 
 ## Resources
 - Document used
