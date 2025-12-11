@@ -10,6 +10,6 @@ To run this project:
 3. Run ```./run.sh ./playbooks/<playbook_name>```
 
 ## Resources
-- [Ansible Documentation]()
-- [Bagisto Documentation]()
-- [Grafana Documentation]()
+- [Ansible Documentation](https://docs.ansible.com/projects/ansible/latest/index.html)
+- [Bagisto Documentation](https://devdocs.bagisto.com/)
+- [Grafana Documentation](https://grafana.com/docs/grafana/latest/setup-grafana/installation/docker/)
