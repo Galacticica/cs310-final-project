@@ -11,7 +11,7 @@
       name: admin
       state: present
 
-  - name: Allow admin group to have passwordless sudo
+  - name: Give admin sudo
     ansible.builtin.copy:
       dest: /etc/sudoers.d/admin
       content: "%admin ALL=(ALL) NOPASSWD: ALL\n"
@@ -19,7 +19,7 @@
       group: root
       mode: '0440'
 
-  - name: Add the user 'hermoine' with a specific uid and a primary group of 'developer'
+  - name: Add the user 'Hermoine'
     ansible.builtin.user:
       name: hermoine
       comment: Hermoine Granger
@@ -29,7 +29,7 @@
       ssh_key_bits: 2048
       ssh_key_file: .ssh/id_rsa
 
-  - name: Add the user 'Katniss' with a specific uid and a primary group of 'developer'
+  - name: Add the user 'Katniss'
     ansible.builtin.user:
       name: katniss
       comment: Katniss Everdeen
@@ -39,7 +39,7 @@
       ssh_key_bits: 2048
       ssh_key_file: .ssh/id_rsa
 
-  - name: Add the user 'ian' with a specific uid and a primary group of 'admin'
+  - name: Add the user 'Ian' 
     ansible.builtin.user:
       name: ian
       comment: Ian Kollipara
