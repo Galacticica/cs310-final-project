@@ -6,13 +6,10 @@ This project creates a simple declarative configuration for the company CraftRoa
 ## Usage
 To run this project:
 1. Run ```git clone https://github.com/Galacticica/cs310-final-project```
-2. 
+2. Ensure ansible is installed.
+3. Run ```./run.sh ./playbooks/<playbook_name>```
 
 ## Resources
-- Document used
-- How to find the documentation for this project.
-
----
-
-Your report files should be formatted as:
-- `Report_<YourFirstName>-<YourLastName>.<ext>`
+- [Ansible Documentation]()
+- [Bagisto Documentation]()
+- [Grafana Documentation]()
