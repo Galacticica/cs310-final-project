@@ -1,4 +1,5 @@
 # CS 310: Final Project
+Authors: Heidi Blank, Reagan Zierke
 
 ## Summary
 This project creates a simple declarative configuration for the company CraftRoast. It creates 2 developer accounts, as well as an admin account. It also creates an e-commerce site and a grafana instance to monitor it.
